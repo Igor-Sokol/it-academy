@@ -5,4 +5,5 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     public string MenuHeader;
+    public string DisplayText;
 }

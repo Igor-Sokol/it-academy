@@ -632,6 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce2d33538ba70b459bad78beec55914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  header: {fileID: 1712259613}
   displayText: {fileID: 2004288950}
   startMenu: {fileID: 1204650089}
 --- !u!1001 &296327343
@@ -859,6 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuHeader: Toggles
+  DisplayText: Toggles
 --- !u!1 &459973294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuHeader: Drops
+  DisplayText: Drops
 --- !u!1 &648406841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f748624f3817ff6418412144713e0036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuHeader: 
+  MenuHeader: Input
+  DisplayText: 
 --- !u!1 &689751941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,7 +3117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f748624f3817ff6418412144713e0036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuHeader: 
+  MenuHeader: Main Menu
+  DisplayText: 
 --- !u!1 &1215763575
 GameObject:
   m_ObjectHideFlags: 0
@@ -3494,7 +3499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f748624f3817ff6418412144713e0036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuHeader: 
+  MenuHeader: Scroll View
+  DisplayText: 
 --- !u!1 &1317185923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6120493556654490457, guid: eb77e3abe49a57a44b9b3a7534a152ee, type: 3}
@@ -5110,6 +5116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuHeader: Buttons
+  DisplayText: Buttons
 --- !u!1 &1984848113
 GameObject:
   m_ObjectHideFlags: 0
