@@ -14,6 +14,9 @@ public class MenuHandler : MonoBehaviour
     [SerializeField]
     private Menu startMenu;
 
+    [SerializeField]
+    private GameObject backButton;
+
     private Menu currentMenu;
 
     private void Start()
@@ -26,6 +29,8 @@ public class MenuHandler : MonoBehaviour
     {
         this.currentMenu.gameObject.SetActive(false);
 
+
+        this.backButton.SetActive(newMenu != this.startMenu);
         newMenu.gameObject.SetActive(true);
 
         this.header.text = newMenu.MenuHeader;

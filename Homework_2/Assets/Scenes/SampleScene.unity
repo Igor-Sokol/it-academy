@@ -635,6 +635,7 @@ MonoBehaviour:
   header: {fileID: 1712259613}
   displayText: {fileID: 2004288950}
   startMenu: {fileID: 1204650089}
+  backButton: {fileID: 1766277128}
 --- !u!1001 &296327343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4570,7 +4571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1766277129
 RectTransform:
   m_ObjectHideFlags: 0
