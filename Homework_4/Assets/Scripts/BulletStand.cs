@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stand : MonoBehaviour
+public class BulletStand : MonoBehaviour
 {
     [SerializeField] private Bullet bulletPrefab;
 
