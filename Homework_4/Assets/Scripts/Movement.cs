@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour
 {
+    private float sideForce;
+    private float forwardForce;
     private Rigidbody body;
 
     [SerializeField] private float movementSpeed;
@@ -17,19 +19,28 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        this.ReadInput();
+    }
+
+    private void FixedUpdate()
+    {
         this.Move();
+    }
+
+    private void ReadInput()
+    {
+        sideForce = Input.GetAxis("Horizontal") * this.rotationSpeed;
+        forwardForce = Input.GetAxis("Vertical") * this.movementSpeed;
     }
 
     private void Move()
     {
-        float sideForce = Input.GetAxis("Horizontal") * this.rotationSpeed;
-        if (sideForce != 0f)
+        if (this.sideForce != 0f)
         {
             this.body.angularVelocity = new Vector3(0.0f, sideForce, 0.0f);
         }
 
-        float forwardForce = Input.GetAxis("Vertical") * this.movementSpeed;
-        if (forwardForce != 0f)
+        if (this.forwardForce != 0f)
         {
             this.body.velocity = this.body.transform.forward * forwardForce;
         }
