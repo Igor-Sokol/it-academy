@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
         this.body = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         this.Move();
     }
