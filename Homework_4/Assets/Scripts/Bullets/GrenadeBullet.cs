@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrenadeBullet : Bullet
 {
-    private const int PRIMITIVE_MASK_LAYER = 1 << 8;
+    private const int PrimitiveMaskLayer = 1 << 8;
 
     [SerializeField] private float slopeDegree;
     [SerializeField] private float explosionRadius;
@@ -17,7 +17,7 @@ public class GrenadeBullet : Bullet
 
     private void OnCollisionEnter(Collision collision)
     {
-        Collider[] targets = Physics.OverlapSphere(this.transform.position, this.explosionRadius, PRIMITIVE_MASK_LAYER);
+        var targets = Physics.OverlapSphere(this.transform.position, this.explosionRadius, PrimitiveMaskLayer);
 
         foreach (var target in targets)
         {

@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour
 {
-    private float sideForce;
-    private float forwardForce;
-    private Rigidbody body;
+    private float _sideForce;
+    private float _forwardForce;
+    private Rigidbody _body;
 
     [SerializeField] private float movementSpeed;
     [SerializeField] private float rotationSpeed;
 
     private void Start()
     {
-        this.body = GetComponent<Rigidbody>();
+        this._body = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -29,20 +27,20 @@ public class Movement : MonoBehaviour
 
     private void ReadInput()
     {
-        sideForce = Input.GetAxis("Horizontal") * this.rotationSpeed;
-        forwardForce = Input.GetAxis("Vertical") * this.movementSpeed;
+        _sideForce = Input.GetAxis("Horizontal") * this.rotationSpeed;
+        _forwardForce = Input.GetAxis("Vertical") * this.movementSpeed;
     }
 
     private void Move()
     {
-        if (this.sideForce != 0f)
+        if (this._sideForce != 0f)
         {
-            this.body.angularVelocity = new Vector3(0.0f, sideForce, 0.0f);
+            this._body.angularVelocity = new Vector3(0.0f, _sideForce, 0.0f);
         }
 
-        if (this.forwardForce != 0f)
+        if (this._forwardForce != 0f)
         {
-            this.body.velocity = this.body.transform.forward * forwardForce;
+            this._body.velocity = this._body.transform.forward * _forwardForce;
         }
     }
 }

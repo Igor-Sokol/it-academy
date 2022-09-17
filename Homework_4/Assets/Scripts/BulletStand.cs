@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletStand : MonoBehaviour
@@ -8,7 +6,7 @@ public class BulletStand : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Player>(out Player player))
+        if (other.TryGetComponent<Player>(out var player))
         {
             player.Gun.ChangeBullet(this.bulletPrefab);
         }
