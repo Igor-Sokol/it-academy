@@ -20,7 +20,7 @@ public class BlockController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0) || Input.touchCount > 0)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             _currentBlock.Cut(_previousBlock.savedPart.transform.position);
             _previousBlock = _currentBlock;
