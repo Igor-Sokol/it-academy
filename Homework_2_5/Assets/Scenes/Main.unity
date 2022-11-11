@@ -14043,18 +14043,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1d803a9d49ddd42b2ec7ba078507f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elements:
+  rigidbodyElements:
+  - {fileID: 3235965576059566484}
   - {fileID: 159912808}
   - {fileID: 1190363742}
   - {fileID: 140590685}
   - {fileID: 954799523}
-  - {fileID: 3235965576059566484}
   - {fileID: 1722417499}
   - {fileID: 855513368}
   - {fileID: 177011560}
   - {fileID: 1026482842}
   - {fileID: 74788652}
   - {fileID: 2130757941}
+  player: {fileID: 1497527876}
 --- !u!1001 &1500069761
 PrefabInstance:
   m_ObjectHideFlags: 0
