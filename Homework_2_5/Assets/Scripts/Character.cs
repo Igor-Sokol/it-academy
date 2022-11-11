@@ -126,7 +126,7 @@ public class Character : MonoBehaviour
         _characterController.transform.rotation = Quaternion.Lerp(currentRotation, targetRotation, rotationSpeed);
     }
     
-    private void Die()
+    public void Die()
     {
         _isAlive = false;
 
